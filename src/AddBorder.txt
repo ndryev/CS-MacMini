@@ -1,0 +1,8 @@
+Steps:
+1. find out length of each string
+2. create a set of asterisks that match that length
+3. add first set of asterisks to String array
+4. add each word in picture prefixed/suffixed with "*"
+5. add another set of asterisks
+
+String array is equal to the length of the picture array + 2 (two sets of ast)
