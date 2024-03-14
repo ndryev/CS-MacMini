@@ -1,0 +1,33 @@
+1. create a move counter at 0
+2. iterate through array
+3. compare two adjacent values
+4. make sure they're strictly increasing
+3. if not — change next element value to a value that's higher than the previous element by the difference plus one
+4. continue to update moves by that difference
+
+other solutions:
+
+int size=inputArray.length;
+    int step=0;
+    for(int i=0;i<size-1;i++){
+       while(inputArray[i+1]<=inputArray[i])
+        {
+                      inputArray[i+1]++;
+                               step++;
+       }
+        }
+        return step;
+
+
+        8888888
+
+        int arrayChange(int[] inputArray){
+            int count = 0;
+                for(int i = 1;i < inputArray.length;i++){
+                  while(inputArray[i] <= inputArray[i-1]){
+                    inputArray[i]++;
+                    count++;
+                }
+                }
+        return count;
+        }

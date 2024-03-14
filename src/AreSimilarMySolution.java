@@ -7,12 +7,8 @@ public class AreSimilarMySolution {
         Arrays.sort(array1);
         Arrays.sort(array2);
 
-        System.out.println(Arrays.toString(array1));
-        System.out.println(Arrays.toString(array2));
-
         if(Arrays.equals(array1, array2)) {
             System.out.println(true);
         }else System.out.println(false);
-//        System.out.println(Arrays.toString(array2));
     }
 }
